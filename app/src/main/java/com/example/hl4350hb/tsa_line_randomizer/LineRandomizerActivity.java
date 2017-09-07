@@ -10,6 +10,7 @@ import java.util.Random;
 
 public class LineRandomizerActivity extends AppCompatActivity {
 
+    // Initializes widget variables.
     private Button mTapHereButton;
     private ImageButton mRightArrow;
     private ImageButton mLeftArrow;
@@ -19,10 +20,12 @@ public class LineRandomizerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_line_randomizer);
 
+        // Generates widgets.
         mTapHereButton = (Button) findViewById(R.id.tap_here_button);
         mRightArrow = (ImageButton) findViewById(R.id.right_arrow);
         mLeftArrow = (ImageButton) findViewById(R.id.left_arrow);
 
+        // Adds event listeners.
         addEventListeners();
     }
 
